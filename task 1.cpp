@@ -6,7 +6,7 @@ int main()
 	char op;
 	cout<<"Enter two numbers: "<<endl;
 	cin>>x>>y;
-	cout<<"Enter the operation to be performed('+','-','*','/'): ";
+	cout<<"Enter the operation to be performed('+','-','*','/','%'): ";
 	cin>>op;
 	switch(op)
 	{
@@ -22,21 +22,11 @@ int main()
 		case '/':
 			cout<<"Division of "<<x<<" and "<<y<<" is "<<x/y;
 			break;
+		case '/':
+			cout<<"Remainder of "<<x<<" and "<<y<<" is "<<x%y;
+			break;
+		default:
+			cout<<"Invalid operator.";
+			break;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
